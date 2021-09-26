@@ -1,19 +1,42 @@
-class ParkingGarage():
+class Parking():
 
-    def __init__(self, tickets, parkingSpaces, currentTicket = {} ):
+    price = 4.99
+    currentTicket = []
+    parkingSpaces = {}
+
+    def __init__(self, tickets, spaces):
         self.tickets = tickets
-        self.parkingspaces = parkingSpaces
-        self.currentticket = currentTicket
-
-
-    def taketicket(self):
+        self.spaces = spaces
         pass
 
-    def payForParking(self):
+
+    def pay_forparking(self):
+        pay_mom = input('Welcome do you want to park Y/N!')
+        while pay_mom == 'Y':
+            continue
+        
+        pay_me = input('Please pay $4.99 for your ticket!')
+        if pay_me == '4.99':
+            return('Have a good day')
+        else:
+            return('Please pay your ticket')
+            pass
+
+    def take_ticket(self):
         pass
 
-    def leaveGarage(self):
+
+    def leave_garage(self):
+        userTicket = input("Please ")
+
+        
+
+    def driver_input():
         pass
 
-def driver():
-    pass
+    
+
+
+
+
+    
