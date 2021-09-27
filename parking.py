@@ -23,7 +23,7 @@ class Parking():
            self.current_ticket[self.tickets.pop()] = False
            print(self.current_ticket) 
         else:
-            print('Invaid input')
+            print('Invalid input')
         
 
 
