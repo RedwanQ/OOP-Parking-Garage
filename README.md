@@ -42,5 +42,8 @@ When the project is completed, commit the final changes, sync all pull requests,
 ###### List group responsiblities below:
 Redwan 3 methods.
 Baruch 2 methods.
+
+Redwan did all 5 of the methods.
+
 ###### Provide name and approxamite line numbers where each person wrote their code
 Redwan 1-68.
