@@ -39,7 +39,8 @@ NOTE: Use VSCode for this project starting with the following files below. Also,
 
 When the project is completed, commit the final changes, sync all pull requests, and each member should submit their respective GitHub links(though the code in each should be the same)
 
-<!-- GROUP -->
-
 ###### List group responsiblities below:
+Redwan 3 methods.
+Baruch 2 methods.
 ###### Provide name and approxamite line numbers where each person wrote their code
+Redwan 1-68.
