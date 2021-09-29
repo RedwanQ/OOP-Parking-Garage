@@ -1,17 +1,9 @@
-
+# Redwan
 
 class Parking():
 
 
     price = 4.99
-    
-    
-
-    # def __init__(self):
-        # self.tickets = [1,2,3]
-        # self.spaces = [1,2,3]
-        # self.current_ticket = {}
-
     tickets = [1,2,3]
     spaces = [1,2,3]
     current_ticket = {}
@@ -19,51 +11,63 @@ class Parking():
 
 
     def take_ticket():
-        take_ticket1 = input('Would you like to park here Y/N?').lower()
+        ticket = input('Would you like to a ticket Y/N? ').lower()
 
-        if take_ticket1 == 'n':
+        if ticket == 'n':
             print('See you soon!')
-        if take_ticket1 == 'y':
+        if ticket == 'y':
            Parking.current_ticket[Parking.tickets.pop()] = False
            print(Parking.current_ticket) 
         
         
 
     def payforparking():
-        input('What is your ticket number')
+        input('What is your ticket number? ')
         if Parking.current_ticket == {}:
             print('Please take a ticket!')
+            Parking.take_ticket()
         else:
-           pay = input(f'Please pay {Parking.price}')
-        if pay == '4.99':
-            Parking.tickets.append(Parking.current_ticket)
+           pay = input(f'Please pay {Parking.price}. ')
+           Parking.current_ticket = True
+           print(Parking.current_ticket)
+        
+   
 
         
-
     def leave_garage():
-        print(Parking.current_ticket)
-
+        if Parking.current_ticket == True:
+            print('Thank you have a good day!')
+        elif Parking.current_ticket == {}:
+            print('Please go get a ticket!')
+            Parking.take_ticket()
+        elif Parking.current_ticket is not {}:
+            print('Please pay your parking fee before existing. ')
+            print(Parking.current_ticket)
+     
+        
+        
 
 def driver():
     while True:
-        user = input('Do you want to: Park/Pay/Leave/Quit').lower()
+        user = input('Do you want to: Park/Pay/Leave/Quit ').lower()
         if user == 'park':
             Parking.take_ticket()
-        if user == 'pay':
+        elif user == 'pay':
             Parking.payforparking()
-        if user == 'leave':
+        elif user == 'leave':
             Parking.leave_garage()
-        if user == 'quit':
+        elif user == 'quit':
             break
         else:
-            print('Invaild Input')
+            print("Invalid response please try again.")
+        
+            
             
 
 driver()
+# Redwan
 
-# parking = Parking()
-# parking.take_ticket() 
-# parking.payforparking()                  
+            
 
 
 
